@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Clients</title>
+</head>
+<body>
+    <h1>Clients</h1>
+    <ul>
+        {% for client in clients %}
+            <li>{{ client.name }} ({{ client.sector }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>

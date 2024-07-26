@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Board of Directors</title>
+</head>
+<body>
+    <h1>Board of Directors</h1>
+    <ul>
+        {% for member in board_members %}
+            <li>{{ member.name }} - {{ member.position }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
